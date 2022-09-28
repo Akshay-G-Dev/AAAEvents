@@ -27,4 +27,5 @@ body{
 }
 .header-image{
     background-image: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg");
+    height: 50vh;
 }
