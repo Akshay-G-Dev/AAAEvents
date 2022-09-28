@@ -1,0 +1,933 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"borde",
+				"border-color"
+			],
+			[
+				"uploaded",
+				"uploaded_by"
+			],
+			[
+				"Pr",
+				"Product"
+			],
+			[
+				"pr",
+				"product"
+			],
+			[
+				"name",
+				"name='home"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"cart-c",
+				"cart-controls"
+			],
+			[
+				"c",
+				"class"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"so",
+				"solid"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"prod",
+				"product"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"cals",
+				"class"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"ca",
+				"cart-items"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"cart",
+				"cart-block"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"color",
+				"color-scheme"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"car",
+				"cart-items"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"act",
+				"action-buttons"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"continer",
+				"container-fluid"
+			],
+			[
+				"jus",
+				"justify-content"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"transitio",
+				"transition"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"go",
+				"go-to-cart"
+			],
+			[
+				"cl",
+				"class"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"incremen",
+				"increment"
+			],
+			[
+				"inc",
+				"increment"
+			],
+			[
+				"dela",
+				"transition-delay"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"abs",
+				"absolute"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"main",
+				"main-cart-count"
+			],
+			[
+				"style",
+				"style"
+			],
+			[
+				"ht",
+				"http"
+			],
+			[
+				"p",
+				"p_id"
+			],
+			[
+				"n",
+				"nth-child"
+			],
+			[
+				"s",
+				"span"
+			],
+			[
+				"ea",
+				"ease-in-out"
+			],
+			[
+				"hir",
+				"hire-btn"
+			],
+			[
+				"hire",
+				"hire-btn"
+			],
+			[
+				"font-we",
+				"font-weight"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"tra",
+				"translate()"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"spa",
+				"span"
+			],
+			[
+				"f",
+				"font-size"
+			],
+			[
+				"opa",
+				"opacity"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"whi",
+				"white"
+			],
+			[
+				"lef",
+				"left"
+			],
+			[
+				"flex",
+				"flex-grow"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"grad",
+				"graduation-year"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"sp",
+				"span"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"im",
+				"img"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"heigh",
+				"height"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"eas",
+				"ease-in-out"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"if",
+				"if"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"by",
+				"buy-now"
+			],
+			[
+				"bt",
+				"btn"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"pric",
+				"price-block"
+			],
+			[
+				"ce",
+				"center"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"E",
+				"Exception"
+			],
+			[
+				"pro",
+				"prodcut"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"conta",
+				"contain"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"outline",
+				"outline-color"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"ex",
+				"extra"
+			],
+			[
+				"selle",
+				"seller-heading"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"sol",
+				"solid"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"get_",
+				"get_media_prefix"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"h",
+				"hidden"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 565,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"termina",
+				"Preferences: Terminality Key Bindings – Default"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"ter",
+				"TerminalProjectFolder: open terminal in project folder"
+			],
+			[
+				"Snippet: ",
+				"Snippet: block"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"th",
+				"UI: Select Theme"
+			],
+			[
+				"",
+				"Arithmetic"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_is_available', {'settings': 'my_shared.sublime-settings'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')\n",
+			"settings = sublime.load_settings('my_shared.sublime-settings')\n>> settings.set('color_pick_return', None)\n>> sublime.run_command('color_pick_api_is_availa",
+			"python",
+			"anaconda",
+			"import cv2",
+			"import  socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\",51315))",
+			"python",
+			"import  socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\",51315))",
+			"import  socket; socket.sockey(socket.AF_INET, socket.SOCK_STREAM).connect((\"localhost\",51315))"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/wamp64/www/AAAEvents.com"
+	],
+	"file_history":
+	[
+		"/G/Akshay/djenv/firststep/app/templatetags/filter.py",
+		"/G/Akshay/djenv/firststep/templates/cart.html",
+		"/G/Akshay/djenv/firststep/.git/COMMIT_EDITMSG",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Terminality/Terminality.sublime-settings",
+		"/C/Users/goyal/Desktop/test.c",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Terminality/README.md",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Terminality/Default.sublime-keymap",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/User/Anaconda.sublime-settings",
+		"/G/Akshay/djenv/firststep/scart/views.py",
+		"/G/Akshay/djenv/firststep/static/css/products-page.css",
+		"/G/Akshay/djenv/firststep/static/css/main.css",
+		"/G/Akshay/djenv/ecom/webpages/base.html",
+		"/G/Akshay/djenv/firststep/scart/cart.py",
+		"/G/Akshay/djenv/firststep/app/urls.py",
+		"/G/Akshay/djenv/firststep/firststep/urls.py",
+		"/G/Akshay/djenv/firststep/scart/urls.py",
+		"/G/Akshay/djenv/firststep/app/views.py",
+		"/G/Akshay/djenv/firststep/firststep/settings.py",
+		"/G/Akshay/djenv/venv/Lib/site-packages/cart/cart.py",
+		"/G/Akshay/djenv/firststep/scart/templatetags/_init_.py",
+		"/G/Akshay/djenv/venv/Lib/site-packages/cart/views.py",
+		"/G/Akshay/djenv/BACKUP.PY",
+		"/G/Akshay/djenv/firststep/static/css/product-css.css",
+		"/G/Akshay/djenv/firststep/templates/product.html",
+		"/G/Akshay/djenv/firststep/templates/products.html",
+		"/G/Akshay/djenv/firststep/templates/base.html",
+		"/G/Akshay/djenv/firststep/app/models.py",
+		"/G/Akshay/djenv/firststep/static/css/style.css",
+		"/G/Akshay/djenv/firststep/templates/index.html",
+		"/G/Akshay/protfolio/new/index.html",
+		"/G/Akshay/protfolio/new/app.css",
+		"/G/Akshay/protfolio/new/book.svg",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/User/firststep.sublime-project",
+		"/G/Akshay/djenv/firststep/reload_server.py",
+		"/G/Akshay/djenv/firststep/app/templatetags/__init__.py",
+		"/C/Users/goyal/Downloads/hexagonal-svgrepo-com.svg",
+		"/G/Akshay/protfolio/new/html.svg",
+		"/G/Akshay/Protfolio0/index.html",
+		"/G/Akshay/djenv/drftest/drftest/urls.py",
+		"/G/Akshay/djenv/firststep/.gitignore",
+		"/G/Akshay/djenv/firststep/app/tests.py",
+		"/G/Akshay/djenv/firststep/app/admin.py",
+		"/G/Akshay/djenv/drftest/app/views.py",
+		"/G/Akshay/djenv/drftest/templates/product.html",
+		"/G/Akshay/djenv/drftest/templates/index.html",
+		"/G/Akshay/djenv/drftest/drftest/settings.py",
+		"/G/Akshay/djenv/drftest/app/tests.py",
+		"/G/Akshay/djenv/drftest/app/serializers.py",
+		"/G/Akshay/Protfolio/index.html",
+		"/G/Akshay/pytapp/google chat/webhook.py",
+		"/G/Akshay/djenv/firststep/requirements.txt",
+		"/G/Akshay/djenv/firststep/data.env",
+		"/G/Akshay/djenv/venv/Lib/site-packages/category/models.py",
+		"/G/Akshay/djenv/venv/Lib/site-packages/category/tools.py",
+		"/G/Akshay/djenv/iwantit/app/models.py",
+		"/G/Akshay/djenv/ecom/users/tests.py",
+		"/G/Akshay/djenv/drftest/requirements.txt",
+		"/G/Akshay/djenv/ecom/ecom/urls.py",
+		"/G/Akshay/djenv/drftest/react test/my-app/src/App.js",
+		"/G/Akshay/djenv/drftest/app/models.py",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Anaconda/Anaconda.sublime-settings",
+		"/G/Akshay/djenv/firststep/static/css/output.css",
+		"/G/Akshay/djenv/firststep/media/products/boot1.png",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Anaconda/anaconda_server/jsonserver.py",
+		"/C/Users/goyal/Downloads/unsplash_WyUklSKNZmk.jpg",
+		"/G/Akshay/djenv/iwantit/app/templatetags/__init__.py",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/User/django snippet.sublime-snippet",
+		"/G/Akshay/djenv/iwantit/static/js/md.js",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/User/iwantit django.sublime-project",
+		"/G/Akshay/djenv/iwantit/static/assets/js/jquery.min.js",
+		"/G/Akshay/djenv/iwantit/templates/base.html",
+		"/C/Users/goyal/Desktop/quotes.py",
+		"/C/Users/goyal/Desktop/republic day.html",
+		"/C/Users/goyal/Downloads/webfontkit-20220122-083812/kaftus-demo.html",
+		"/C/Users/goyal/AppData/Local/Temp/is-I2TL1.tmp/editor-test.txt",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/User/ecom django project.sublime-project",
+		"/G/Akshay/djenv/ecom/static/js/product.js",
+		"/G/Akshay/djenv/ecom/webpages/manage/course/manage sessions.html",
+		"/G/Akshay/djenv/ecom/webpages/manage/course/mycourses.html",
+		"/G/Akshay/djenv/ecom/webpages/manage/courses.html",
+		"/G/Akshay/djenv/ecom/static/fake-loader/src/fakeloader.js",
+		"/G/Akshay/djenv/ecom/users/models.py",
+		"/G/Akshay/djenv/ecom/webpages/main/index.html",
+		"/G/Akshay/djenv/ecom/course_sessions/views.py",
+		"/G/Akshay/djenv/ecom/users/views.py",
+		"/G/Akshay/djenv/ecom/webpages/manage/profile.html",
+		"/G/Akshay/djenv/ecom2/app/views.py",
+		"/G/Akshay/djenv/ecom/course_sessions/urls.py",
+		"/G/Akshay/djenv/ecom/users/urls.py",
+		"/G/Akshay/djenv/ecom/users/forms.py",
+		"/G/Akshay/djenv/ecom/course_sessions/forms.py",
+		"/G/Akshay/djenv/ecom/webpages/manage/student_verify.html",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/Transparency/SublimeTextTrans.sublime-settings",
+		"/G/Akshay/djenv/ecom/ecom/settings.py",
+		"/G/Akshay/djenv/ecom/users/admin.py",
+		"/G/Akshay/pytapp/opencv-test/OpenCVtest.py",
+		"/G/Akshay/djenv/venv/Lib/site-packages/django/contrib/auth/forms.py",
+		"/G/Akshay/djenv/ecom/webpages/registration/signup.html",
+		"/G/Akshay/djenv/ecom/webpages/registration/signup/number.html",
+		"/G/Akshay/djenv/ecom/webpages/registration/signup/email.html",
+		"/G/Akshay/djenv/ecom/webpages/registration/signup/personal details.html",
+		"/G/Akshay/djenv/venv/Lib/site-packages/django/db/models/base.py",
+		"/G/Akshay/djenv/ecom/static/fake-loader/dist/fakeloader.min.js",
+		"/G/Akshay/djenv/ecom/media/img/1633076064753.gif",
+		"/G/Akshay/python/lib/site-packages/cv2/__init__.py",
+		"/G/Akshay/pytapp/OpenCVtest.py",
+		"/G/Akshay/djenv/ecom/static/css/md.css",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/goyal/AppData/Roaming/Sublime Text/Packages/User/JSON.sublime-settings",
+		"/G/Akshay/djenv/iwantit/app/views.py"
+	],
+	"find":
+	{
+		"height": 29.6
+	},
+	"find_in_files":
+	{
+		"height": 160.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 565,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.6
+	},
+	"input":
+	{
+		"height": 72.4
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.exec":
+	{
+		"height": 161.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 144.399993896
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "sublime-project.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"car",
+				"firststep\\templates\\cart.html"
+			],
+			[
+				"",
+				"webpages\\main\\index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
