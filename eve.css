@@ -26,5 +26,5 @@ body{
     list-style: none;
 }
 .header-image{
-    background: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg");
+    background-image: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg");
 }
