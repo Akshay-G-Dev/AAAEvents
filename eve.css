@@ -1,5 +1,6 @@
 body{
      padding: 0%;
+     background-color: #406882;
      margin: 0%;
  }
  .icon{
@@ -13,13 +14,14 @@ body{
      position: absolute;
      margin: 10px 20px;
      width: 97.7%;
-     background-color:  #1a2456;
-     color: #f0efed;
+     background-color:  #B1D0E0;
+     color: #406882;
      border-radius: 16px;
  }
  .company-name{
   display: flex;
   padding-left: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
  .menu{
      display: flex;
@@ -30,8 +32,32 @@ body{
      margin: 0 15px;
      list-style: none;
  }
- .header-image{
-     background-color: #FFDB58;
+ .headertext{
+     background-color: #1A374D;
      display: flex;
      justify-content: space-around;
+     width: 100%;
+     height: 650px;
  }
+.wel{
+    color: #406882;
+    font-size: 100px;
+    height: 0px;
+    margin: 16%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.category{
+    margin: 60px;
+    background-color:  #B1D0E0;
+}
+.feat{
+    padding: 15px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    background-color: whitesmoke;
+    line-height: 10px;
+}
+footer{
+    background-color: #6998AB;
+}
