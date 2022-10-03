@@ -1,0 +1,31 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.head{
+    z-index: 2;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin: 10px 0;
+    width: 100%;
+    background-color: rgba(62, 62, 62, 0.54);
+}
+.company-name{
+    padding-left: 2em;
+    font-size: 1.5em;
+    font-family: cursive,sans-serif;
+}
+.menu{
+    display: flex;
+    
+}
+.menu li{
+    margin: 0 15px;
+    list-style: none;
+}
+.header-image{
+    background-image: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg");
+    height: 50vh;
+}
