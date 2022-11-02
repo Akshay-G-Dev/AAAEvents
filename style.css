@@ -22,7 +22,7 @@ body{
      display: flex;
      align-items: flex-start; 
 }
-nav{
+.top-nav{
     position: absolute;
      background-color: rgba(0, 0, 0, 0.42);
      z-index: 2;
