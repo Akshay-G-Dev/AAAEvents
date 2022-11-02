@@ -23,8 +23,10 @@ body{
      align-items: flex-start; 
 }
 nav{
-    background: rgba(0,0,0,0.42);
-    color: #fff;
+    position: absolute;
+     background-color: rgba(0, 0, 0, 0.42);
+     z-index: 2;
+     width: 100vw;
 }
 .navbar-toggler-icon{
     color: #fff !important;
