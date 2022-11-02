@@ -22,47 +22,8 @@ body{
      display: flex;
      align-items: flex-start; 
 }
-/*nav{
-     display: flex;
-     padding-top: 5px ;
-     width: 100%;
-     align-items: center;
-     flex-wrap: wrap;
-     padding: 5px 0;
-     z-index: 2;
-}
-nav ul{
-     flex:1;
-     text-align: right;
-     padding-right: 20px;
-}
-nav ul li{
-     display: inline-block;
-     list-style: none;
-     margin:10px 30px;
-}
-nav ul li a::after{
-     content: '';
-     width: 0%;
-     height: 3px;
-     position: absolute;
-     bottom: -5px;
-     left: 50%;
-     transform: translateX(-50%);
-     background: #fff;
-     transition: width 0.3s;
-}
-nav ul li a:hover::after{
-     width: 50%;
-}
-nav ul li a{
-     color: #fff;
-     text-decoration: none;
-     position: relative;
-}*/
-
 nav{
-    background: #38409cd6;
+    background: transparent;
     color: #fff;
 }
 .navbar-toggler-icon{
