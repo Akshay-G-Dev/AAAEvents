@@ -41,6 +41,15 @@ nav {
     width: 200px;
 }
 
+.company-name {
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    top: -5px;
+    color: #fff;
+    font-weight: bold;
+}
+
 .nav-link {
     color: #fff !important;
 }
@@ -62,11 +71,11 @@ nav {
 .text-box {
     color: #fff;
     position: absolute;
-    bottom: 3%;
+    top: 25%;
     padding: 2%;
 }
 
-.text-box h1 {
+.text-box h3 {
     font-size: 8em;
     line-height: 160px;
     margin-left: -10px;
@@ -97,7 +106,9 @@ nav {
 }
 
 .text-box a {
-    color: #fff;
+    /* color: #fff; */
+    all: unset;
+    background-color: rgba(255, 255, 255, 0.205);
     text-decoration: none;
     padding: 10px 20px;
     margin-right: 20px;
@@ -105,6 +116,13 @@ nav {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+
+.text-box a:hover {
+    background-color: rgba(255, 255, 255, 0.568);
+    color: #fff;
+    /* font-size: 1.2em; */
 }
 
 .text-box a span {
@@ -208,6 +226,18 @@ nav {
 .feature-text {
     padding: 0 20px;
     text-align: initial;
+}
+
+footer {
+    bottom: 0;
+    height: 10em;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    text-align: center;
+}
+
+footer .copyright {
+    bottom: 0;
 }
 
 @media screen and (max-width:770px) {
