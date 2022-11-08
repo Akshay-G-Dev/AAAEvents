@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Eventia-Aboutus</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+      }
+
+      body{
+        background-color: #f2f2f2;
+      }
+
+      .about-section {
+        padding-top: 6em;
+        padding-bottom: 2em;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      .a1{
+        background-color: #f2f2f2;
+        padding-top: 2em;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #555;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="height: 80px">
+      <a class="navbar-brand" href="#"
+        ><span class="company-name">Eventia</span></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul
+          class="navbar-nav mr-auto"
+          style="float: right; right: 0; position: absolute"
+        >
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+
+          <li>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img src="man.png" alt="icon" class="cart" />
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Manage Profile</a>
+              <a class="dropdown-item" href="#">Feedback</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Help</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+    <div class="about-section">
+      <h1>About Us</h1>
+      <p>Eventia </p>
+      <p>
+        We do some thing
+      </p>
+    </div>
+
+    <div class="a1">
+
+
+      <h2 style="text-align: center ; color:grey">Our Team</h2>
+
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/w3images/team1.jpg" alt="akshay" style="width: 100%" />
+            <div class="container">
+              <h2 style="color: black;">Akshay K. Goyal</h2>
+              <p class="title">someone</p>
+              <p style="color: rgb(56, 56, 56);">ye bhoot kuch krta h</p>
+              <p style="color: rgb(56, 56, 56);">2021pietcaakshay008@poornima.org</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="/w3images/team2.jpg" alt="ayush" style="width: 100%" />
+            <div class="container">
+              <h2 style="color: black;">Ayush M</h2>
+              <p class="title">Anyone</p>
+              <p style="color: rgb(56, 56, 56);">ye kuch krta h</p>
+              <p style="color: rgb(56, 56, 56);">2021pietcaayush014@poornima.org</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="/w3images/team3.jpg" alt="akshat" style="width: 100%" />
+            <div class="container">
+              <h2 style="color: black;">Akshat Mishra</h2>
+              <p class="title">noone</p>
+              <p style="color: rgb(56, 56, 56);">ye kuch b nahi krta</p>
+              <p style="color: rgb(56, 56, 56);">2021pietcaakshat007@poornima.org</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer id="footer">
+        <div>
+            <span class="company-name">Eventia</span>
+            <div class="links">
+                <span>Links</span>
+                <ul>
+                    <li><a style="color: white;" href="index.html">Home</a></li>
+                    <li><a style="color: white;" href="#">Contact Us</a></li>
+                    <li><a style="color: white;" href="feedback.html">Feedback</a></li>
+                    <li><a style="color: white;" href="aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href=""><img src="dribble.png"></a>
+                <a href=""><img src="telegram.png"></a>
+                <a href=""><img src="instagram.png"></a>
+            </div>
+            
+        </div>
+        <span class="copyright">Copyright &copy; 2022</span>
+    </footer>
+  </body>
+</html>
