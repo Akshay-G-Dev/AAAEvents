@@ -109,4 +109,10 @@
     .features-img{
         flex-basis: 100%;
     }
+    .featuers h1{
+        text-align: center;
+    }
+    .featuers p{
+        text-align: center;
+    }
 }
