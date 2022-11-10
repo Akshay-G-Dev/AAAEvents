@@ -99,3 +99,14 @@
     color: black;
     max-width: 70%;
 }
+@media screen and (max-width:770px){
+    .title-text h1{
+        font-size: 35px;
+    }
+    .featuers{
+        flex-basis: 100%;
+    }
+    .features-img{
+        flex-basis: 100%;
+    }
+}
