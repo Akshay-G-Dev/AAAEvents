@@ -3,7 +3,7 @@
     * {
         
         box-sizing: border-box;
-        font-family: 'popins', sans-serif;
+        
     }
 
     body {
@@ -12,6 +12,7 @@
         color: #fff;
         margin: 0%;
         max-width: 100vw;
+        font-family: 'popins', sans-serif;
     }
 
     .header {
@@ -85,7 +86,7 @@
         margin-left: -10px;
         color: transparent;
         -webkit-text-stroke: 1px #fff;
-        background: url(back.png);
+        background: url(images/back.png);
         -webkit-background-clip: text;
         background-position: 0 0;
         animation: back 20s linear infinite;
