@@ -89,7 +89,7 @@
         font-family: 'Teko', sans-serif;   
         color: transparent;
         -webkit-text-stroke: 1px #fff;
-        background: url(back.png);
+        background: url(images/back.png);
         -webkit-background-clip: text;
         background-position: 0 0;
         animation: back 20s linear infinite;
