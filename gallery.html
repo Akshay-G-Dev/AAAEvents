@@ -25,14 +25,17 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: rgba(0, 0, 0, 0.541);
             bottom: 0;
+            color: #fff;
+        }
+        .image img{
+            height: 100%;
+            width: 100%;
         }
         .image:hover span{
             
             animation: eventup 1s forwards;
-            
-
         }
         @keyframes eventup{
             0%{
@@ -55,7 +58,7 @@
         <header>Memorable Momments</header>
         <section class="gallery">
             <div class="image">
-                <img src="" alt="" />
+                <img loading="lazy" src="https://images.pexels.com/photos/1405528/pexels-photo-1405528.jpeg" alt="" />
                 <span>Bithday Event</span>
             </div>
             <div class="image"><img src="" alt="" />

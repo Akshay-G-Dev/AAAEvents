@@ -188,9 +188,9 @@
     </footer>
     <section class="popup">
         <div class="popup-box">
-            <form action="action_page.php">
+            <form action="">
         
-                <div class="container">
+                <div class="login-container">
                     <h1>Register</h1>
                   <p>Please fill in this form to create an account.</p>
                   <hr>
@@ -222,12 +222,16 @@
             left:0;
             width: 100vw;
             height: 100vh;
+            display: flex;
+            
+            justify-content: center;
             background-color: rgba(114, 104, 104, 0.486);
         }
         .popup-box{
-            position: fixed;
+            /* position: fixed;
             left:40%;
-            top: 40%;
+            top: 40%; */
+            margin-top: 5em;
             background-color: rgb(255, 255, 255);
             height: 20em;
             width: 30em;

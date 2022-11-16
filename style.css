@@ -362,10 +362,10 @@
 * {box-sizing: border-box;
     text-align: center;
  color: goldenrod;
-background-color: grey;}
+}
 
 /* Add padding to containers */
-.container {
+.login-container {
 padding: 3% 25%;
 }
 
