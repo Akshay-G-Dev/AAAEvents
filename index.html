@@ -10,6 +10,10 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="icon" href="icon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Expletus+Sans:ital,wght@1,500&family=Fredoka+One&family=Marhey&family=Merienda:wght@700&family=Satisfy&family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -44,9 +48,11 @@
                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                    </form>-->
                 <li>
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="btn btn-primary m-1" id="login-signup">Login</a>
+                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="images/man.png" alt="icon" class="cart ">
-                    </a>
+                        
+                    </a> -->
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="profile.html">Manage Profile</a>
                         <a class="dropdown-item" href="feedback.html">Feedback</a>
@@ -191,7 +197,7 @@
             <form action="">
         
                 <div class="login-container">
-                    <h1>Register</h1>
+                    <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
                   <p>Please fill in this form to create an account.</p>
                   <hr>
                   <label for="email"><b>Email</b></label>
@@ -216,28 +222,52 @@
         </div>
     </section>
     <style>
+        .close-popup{
+            position: absolute;
+            right:2em;
+            top:1em;
+            cursor: pointer;
+        }
+        .close-popup:hover{
+            transform: scale(1.5);
+        }
         .popup{
+            
             position: fixed;
             top: 0;
             left:0;
             width: 100vw;
             height: 100vh;
-            display: flex;
-            
+            display: none;
+           
             justify-content: center;
             background-color: rgba(114, 104, 104, 0.486);
         }
+        .popup.open{
+            display:flex;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            -moz-backdrop-filter: blur(5px);
+        }
         .popup-box{
-            /* position: fixed;
-            left:40%;
+            display:none;
+            position: relative;
+            /*left:40%;
             top: 40%; */
-            margin-top: 5em;
+            margin-top: 6em;
             background-color: rgb(255, 255, 255);
-            height: 20em;
+            height: fit-content;
             width: 30em;
         }
     </style>
 </body>
-
+<script>
+    function toggle_popup(){
+        $(".popup").toggleClass('open');
+        $(".popup-box").toggle();
+    }
+    $("#login-signup").on('click',toggle_popup);
+    $(".close-popup").on('click',toggle_popup);
+</script>
 
 </html>
