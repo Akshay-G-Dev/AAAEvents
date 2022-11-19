@@ -1,250 +1,264 @@
-    * {
-          margin: 0;
-          padding: 0;
-      text-align: center;
-        box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0%;
+    background-color: #125D98;
+    color: #fff;
+    margin: 0%;
+    max-width: 100vw;
+    font-family: 'Expletus Sans', cursive;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), transparent), url(https://images.pexels.com/photos/1613240/pexels-photo-1613240.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+nav {
+    position: fixed !important;
+    background-color: rgba(0, 0, 0, 0.42);
+    z-index: 2;
+    width: 100%;
+    padding: 2em;
+}
+
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+
+.icon {
+    height: 40px;
+    width: 200px;
+}
+
+.company-name {
+    padding-left: 2%;
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    top: -5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.logo {
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    cursor: pointer;
+}
+
+.cart {
+    width: 30px;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.text-box {
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 17%;
+    right: 17%;
+    padding: 2%;
+}
+
+.text-box h3 {
+    font-size: 8em;
+    line-height: 160px;
+    margin-left: -10px;
+    font-family: 'Teko', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
+}
+
+
+
+.text-box .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Fredoka One', cursive;
+    margin: 30px;
+
+}
+
+.text-box a {
+    color: #fff !important; 
+    all: unset;
+    background-color: rgba(255, 255, 255, 0.205);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer ;
+}
+
+.text-box a:hover {
+    background-color: rgba(255, 255, 255, 0.568);
+    color: #fff;
+    /* font-size: 1.2em; */
+}
+
+.text-box a span {
+    font-size: 20px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.social-icons img {}
+
+.social-icons img {
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+    transition: all 1s cubic-bezier(0.4, 1, 0.4);
+    opacity: 0.7;
+}
+
+.social-icons img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 10em;
+    background-color: rgb(32, 32, 32);
+    color: #fff;
+    text-align: center;
+}
+
+footer .company-name {
+    font-size: 4em;
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0.4em;
+
+}
+
+footer .copyright {
+    position: absolute;
+    margin-top: 3em;
+    bottom: 0;
+    display: block;
+    color: #664848;
+}
+
+header .company-name {
+    display: block;
+    margin: auto;
+}
+
+footer>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 2em;
+}
+
+footer .social-icons {
+    all: unset;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+
+}
+
+footer .links {
+    /*position: real;
+    right: 5em;
+    top: 1em;*/
+
+
+}
+
+footer .links span {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: left;
+}
+
+footer .links ul {
+
+    margin-left: 1em;
+
+}
+
+footer .links ul li {
+    list-style-type: none;
+    text-align: left;
+}
+
+@media screen and (max-width:770px) {
+    .title-text h1 {
+        font-size: 35px;
     }
 
-    body {
-        padding: 0%;
-        background-color: #125D98;
-        color: #fff;
-        margin: 0%;
-        max-width: 100vw;
-        font-family: 'Expletus Sans', cursive;
+    .featuers {
+        flex-basis: 100%;
     }
 
-    .header {
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(0, 0, 0, .3), transparent), url(https://images.pexels.com/photos/1613240/pexels-photo-1613240.jpeg);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 0 8%;
-        margin: 0;
-        position: relative;
-        display: flex;
-        align-items: flex-start;
+    .features-img {
+        flex-basis: 100%;
     }
+}
 
-    nav {
-        position: fixed !important;
-        background-color: rgba(0, 0, 0, 0.42);
-        z-index: 2;
-        width: 100%;
-        padding: 2em;
-    }
-
-    .navbar-toggler-icon {
-        color: #fff !important;
-    }
-
-    .icon {
-        height: 40px;
-        width: 200px;
-    }
-
-    .company-name {
-        padding-left: 2%;
-        position: absolute;
-        font-family: 'Dancing Script', cursive;
-        font-size: 2.5em;
-        top: -5px;
-        color: #fff;
-        font-weight: bold;
-    }
-
-    .nav-link {
-        color: #fff !important;
-    }
-
-    .logo {
-        width: 140px;
-        position: absolute;
-        top: 4%;
-        left: 10%;
-        cursor: pointer;
-    }
-
-    .cart {
-        width: 30px;
-        cursor: pointer;
-        margin-right: 1em;
-    }
-
-    .text-box {
-        color: #fff;
-        position: absolute;
-        top: 25%;
-        left: 17%;
-        right: 17%;
-        padding: 2%;
-    }
-
-    .text-box h3 {
-        font-size: 8em;
-        line-height: 160px;
-        margin-left: -10px;
-        font-family: 'Teko', sans-serif;   
-        color: transparent;
-        -webkit-text-stroke: 1px #fff;
-        background: url(images/back.png);
-        -webkit-background-clip: text;
-        background-position: 0 0;
-        animation: back 20s linear infinite;
-    }
-
-    @keyframes back {
-        100% {
-            background-position: 2000px 0;
-        }
-    }
-
-
-
-    .text-box .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        font-family: 'Fredoka One', cursive;
-        margin: 30px;
-    }
-
-    .text-box a {
-        /* color: #fff; */
-        all: unset;
-        background-color: rgba(255, 255, 255, 0.205);
-        text-decoration: none;
-        padding: 10px 20px;
-        margin-right: 20px;
-        border: 2px solid #fff;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    .text-box a:hover {
-        background-color: rgba(255, 255, 255, 0.568);
-        color: #fff;
-        /* font-size: 1.2em; */
-    }
-
-    .text-box a span {
-        font-size: 20px;
-        line-height: 15px;
-        margin-left: 5px;
-    }
-
-    .social-icons {
-        position: absolute;
-        right: 5%;
-        bottom: 8%;
-    }
-    .social-icons img{
-        
-    }
-
-    .social-icons img {
-        width: 25px;
-        display: block;
-        margin: 25px 5px;
-        transition: all 1s cubic-bezier(0.4,1,0.4);
-        opacity: 0.7;
-    }
-    .social-icons img:hover{
-        transform: scale(1.5);
-        opacity: 1;
-    }
-
-    footer {
-        position: relative;
-        bottom: 0;
-        height: 10em;
-        background-color: rgb(32, 32, 32);
-        color: #fff;
-        text-align: center;
-    }
-    footer .company-name{
-        font-size: 4em;
-        position: unset;
-        display: flex;  
-        flex-direction: column;
-        height: 100%;
-        vertical-align: middle;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0.4em;
-
-    }
-    footer .copyright {
-        position: absolute;
-        margin-top: 3em;
-        bottom: 0;
-        display: block;
-        color: #664848;
-    }
-    header .company-name{
-        display: block;
-        margin: auto;
-    }
-    footer >div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 1em 2em;
-    }
-    footer .social-icons{
-        all: unset;
-        display: flex;
-        height: 100%;
-        flex-direction: row;
-
-    }
-    footer .links{
-        /*position: real;
-        right: 5em;
-        top: 1em;*/
-
-        
-    }
-    footer .links span{
-        font-size: 1.5em;
-        font-weight: 600;
-        text-align: left;
-    }
-    footer .links ul{
-        
-        margin-left: 1em;
-        
-    }
-
-    footer .links ul li{
-        list-style-type: none;
-        text-align: left;
-    }
-
-    @media screen and (max-width:770px) {
-        .title-text h1 {
-            font-size: 35px;
-        }
-        .featuers {
-            flex-basis: 100%;
-        }
-        .features-img {
-            flex-basis: 100%;
-        }
-    }
-.catlogRow{
+.catlogRow {
     padding: 5%;
     background-color: #fff5ee;
     width: 95% fit-content;
     font-family: 'Expletus Sans', cursive;
 }
-.catlogCol{
+
+.catlogCol {
     text-align: center;
     padding: 4%;
     font-family: 'Satisfy', cursive;
@@ -254,9 +268,9 @@
     --first_color: #15241c;
     --second-color: #09382f;
     --third-color: #FF882E;
-    --fourth-color:#E55E2E;
-    --fifth-color:#F8F1E0;
-    --sixth-color : #EC9937;
+    --fourth-color: #E55E2E;
+    --fifth-color: #F8F1E0;
+    --sixth-color: #EC9937;
 }
 
 .Testimonials {
@@ -360,61 +374,94 @@
     padding-top: 6px;
     color: var(--fifth-color);
 }
-* {box-sizing: border-box;
+
+* {
+    box-sizing: border-box;
     text-align: center;
- color: goldenrod;
+    color: goldenrod;
 }
 
 /* Add padding to containers */
 .login-container {
-padding: 3% 10%;
-height:fit-content;
+    padding: 3% 10%;
+    height: fit-content;
+}
+.login-container label{
+    text-align: left;
+    width: 100% ;
+    margin-right: 20px;
 }
 
 /* Full-width input fields */
-input[type=text], input[type=password] {
-width: 100%;
-padding: 15px;
-margin: 5px 0 22px 0;
-display: inline-block;
-border: none;
-background: #f1f1f1;
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    
 }
 
-input[type=text]:focus, input[type=password]:focus {
-background-color: #ddd;
-outline: none;
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
 }
 
 /* Overwrite default styles of hr */
 hr {
-border: 1px solid #f1f1f1;
-margin-bottom: 25px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
 
 /* Set a style for the submit/register button */
 .registerbtn {
-background-color: #04AA6D;
-color: white;
-padding: 16px 20px;
-margin: 8px 0;
-border: none;
-cursor: pointer;
-width: 100%;
-opacity: 0.9;
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
 }
 
 .registerbtn:hover {
-opacity:1;
+    opacity: 1;
 }
 
 /* Add a blue text color to links */
 a {
-color: dodgerblue;
+    color: dodgerblue;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
-background-color: #f1f1f1;
-text-align: center;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.catlogCol{
+    animation: grow 5s ease-in-out infinite;
+/*    animation-iteration-count: 1;*/
+animation-direction: normal;   
+    animation-fill-mode: backwards;
+
+}
+.catlogCol:nth-child(1){animation-delay: 3.5s;}
+.catlogCol:nth-child(2){animation-delay: 1.2s;}
+.catlogCol:nth-child(3){animation-delay: 3.4s}
+@keyframes grow {
+    5%{
+        transform: scale(1.2);
+    }
+    15%, 100%{
+        transform: scale(1.3);
+    }
+    
+}
+.catlogCol::after{
+
 }

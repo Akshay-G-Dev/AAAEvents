@@ -10,7 +10,7 @@
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="icon" href="icon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Expletus+Sans:ital,wght@1,500&family=Fredoka+One&family=Marhey&family=Merienda:wght@700&family=Satisfy&family=Teko:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css" integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -90,7 +90,7 @@
                 <img src="https://images.pexels.com/photos/2381596/pexels-photo-2381596.jpeg" alt="Social Event" width="300" height="300" style="border-radius: 100%; padding: 2%;">
                 <h4>Social Event</h4>
             </div>
-            <div class="col catlogCol">
+            <div class="col catlogCol active">
                 <img src="https://images.pexels.com/photos/4181659/pexels-photo-4181659.jpeg" alt="Social Event" width="300" height="300" style="border-radius: 100%; padding: 2%;">
                 <h4>Professional Event</h4>
             </div>
@@ -194,39 +194,46 @@
     </footer>
     <section class="popup">
         <div class="popup-box">
-            <form action="">
+            
         
-                <div class="login-container">
-                    <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
-                  <p>Please fill in this form to create an account.</p>
+            <div class="login-container">
+                <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <table>
+                <tr>
+                    <td><label for="email"><b>Email</b></label></td>
+                    <td><input type="text" placeholder="Enter Email" name="email" id="email" required></td>
+                </tr>
+                <tr>
+                <td><label for="psw"><b>Password</b></label></td>
+                <td><input type="password" placeholder="Enter Password" name="psw" id="psw" required></td>
+                </tr>
+                <tr>
+                  <td><label for="psw-repeat"><b>Repeat Password</b></label></td>
+                  <td><input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required></td>
+                </tr>
                   <hr>
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" id="email" required>
-              
-                  <label for="psw"><b>Password</b></label>
-                  <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-              
-                  <label for="psw-repeat"><b>Repeat Password</b></label>
-                  <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-                  <hr>
-              
-                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                  <button type="submit" class="registerbtn">Register</button>
-                </div>
-              
-                <div class="container signin">
-                  <p>Already have an account? <a href="#">Sign in</a>.</p>
-                </div>
-              </form>
+                </table>
+              <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              <button type="submit" class="registerbtn">Register</button>
+            </div>
+          
+            <div class="container signin">
+              <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+            </div>
         </section>    
-        </div>
-    </section>
+        
+
     <style>
         .close-popup{
             position: absolute;
             right:2em;
             top:1em;
             cursor: pointer;
+            transition: 0.1s all ease-in;
+
         }
         .close-popup:hover{
             transform: scale(1.5);
@@ -250,7 +257,7 @@
             -moz-backdrop-filter: blur(5px);
         }
         .popup-box{
-            display:none;
+            
             position: relative;
             /*left:40%;
             top: 40%; */
@@ -263,11 +270,15 @@
 </body>
 <script>
     function toggle_popup(){
-        $(".popup").toggleClass('open');
-        $(".popup-box").toggle();
+        $(".popup").addClass('open');
+        $(".popup-box").slideDown();
+    }
+    function open_popup(){
+        $('.popup-box').slideUp();
+        $(".popup").removeClass('open');
     }
     $("#login-signup").on('click',toggle_popup);
-    $(".close-popup").on('click',toggle_popup);
+    $(".close-popup").on('click',open_popup);
 </script>
 
 </html>
