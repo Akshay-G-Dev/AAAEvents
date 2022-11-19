@@ -111,6 +111,7 @@ nav {
     flex-wrap: wrap;
     font-family: 'Fredoka One', cursive;
     margin: 30px;
+    
 
 }
 
@@ -256,6 +257,9 @@ footer .links ul li {
     background-color: #fff5ee;
     width: 95% fit-content;
     font-family: 'Expletus Sans', cursive;
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: unset !important;
+    margin-right: 0 !important;
 }
 
 .catlogCol {
