@@ -1,32 +1,35 @@
-.Footer{
+footer{
     padding: 3%;
     color: #fff;
     height: 100%;
     background-color: black;
-  }
-  .Footer ul{
-    position:relative;
-    width: 800px;
-    left: 15%;
     display: flex;
-    flex-direction: row-reverse;
-    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
   }
-  .Footer ul li{
-    position: relative;
+  footer ul{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  footer ul li{
+
     list-style: none;
   }
-  .Footer ul li a{
+  footer ul li a{
     position: relative;
     font-size: 20px;
     text-decoration: none;
     line-height: 1em;
     letter-spacing: 2px;
-    text-transform: uppercase;
+/*    text-transform: uppercase;*/
     color: #fff;
     -webkit-text-stroke: 1px var(--clr);
   }
-  .Footer ul li a::before{
+  footer ul li a::before{
     content: attr(data-text);
     position: absolute;
     color: var(--clr);
@@ -35,11 +38,11 @@
     transition: 1s;
     border-right: 3px solid var(--clr);
   }
-  .Footer ul li a:hover::before{
+  footer ul li a:hover::before{
     width: 100%;
     filter: drop-shadow(0 0 25px var(--clr));
   }
-  .Footer .company-name {
+  footer .company-name {
     font-size: 4em;
     position: unset;
     display: flex;

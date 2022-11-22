@@ -162,7 +162,7 @@ nav {
     transform: scale(1.5);
     opacity: 1;
 }
-
+/* old footer
 footer {
     position: relative;
     bottom: 0;
@@ -216,7 +216,7 @@ footer .social-icons {
 footer .links {
     /*position: real;
     right: 5em;
-    top: 1em;*/
+    top: 1em;*
 
 
 }
@@ -237,7 +237,7 @@ footer .links ul li {
     list-style-type: none;
     text-align: left;
 }
-
+*/
 @media screen and (max-width:770px) {
     .title-text h1 {
         font-size: 35px;
@@ -282,7 +282,7 @@ footer .links ul li {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 40px 0px;
+    margin: 40px 0;
 }
 
 .Testimonials_title h2 {
