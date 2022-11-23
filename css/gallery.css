@@ -1,0 +1,168 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ .carousel-item{
+     background-size: contain;
+     background-position: center;
+     height: 90vh;
+ }
+ .galleryText h1{
+     z-index: 2;
+     color: aqua;
+     font-size: 200px;
+     position: absolute;
+     top: 20%;
+     left: 25%;
+ }
+ 
+ @media screen and (max-width:770px){
+     .title-text h1{
+         font-size: 35px;
+     }
+ }
+ /*--services--*/
+ 
+ .gallery{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .gallery .image{
+     position: relative;
+     height: 200px;
+     width: 300px;
+     flex: 1 1 200px;
+    background-color: #e2e2e2;
+     margin: 1em;
+ }
+ .image span{
+     position: absolute;
+     width:100%;
+     height: 0%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     background-color: rgba(0, 0, 0, 0.541);
+     bottom: 0;
+     color: #fff;
+ }
+ .image img{
+     height: 100%;
+     width: 100%;
+ }
+ .image:hover span{
+     
+     animation: eventup 1s forwards;
+ }
+ @keyframes eventup{
+     0%{
+         height: 0%;
+     }
+     100%{
+         height: 50%;
+     }
+     
+ }
+ 
+ img {
+     width: 700px;
+     height: 700px;
+   }
+   .marquee {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+   }
+   .marquee div {
+     display: block;
+     position: absolute;
+     width: 300%;
+     overflow: hidden;
+     animation: marquee 20s linear infinite;
+   }
+   .marquee div:hover {
+     animation-play-state: paused;
+   }
+   .marquee span {
+     float: left;
+     width: 50%;
+   }
+   
+   @keyframes marquee {
+     0% { left: 0; }
+     100% { left: -100%; }
+   }
+   /* side nav*/
+   .col{
+     border: none;
+   }
+   .card{
+     margin: 4%;
+     border: none;
+     width: 250px;
+   }
+   .form-control{
+
+   }
+   .form-control:hover, .form-control:active{
+      border: none;
+   }
+ 
+ /*Footer css*/
+ .Footer{
+  padding: 3%;
+  color: #fff;
+  height: 100%;
+  background-color: black;
+}
+.Footer ul{
+  position:relative;
+  width: 800px;
+  left: 15%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+.Footer ul li{
+  position: relative;
+  list-style: none;
+}
+.Footer ul li a{
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-text-stroke: 1px var(--clr);
+}
+.Footer ul li a::before{
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 3px solid var(--clr);
+}
+.Footer ul li a:hover::before{
+  width: 100%;
+  filter: drop-shadow(0 0 25px var(--clr));
+}
+.company-name {
+  font-size: 4em;
+  position: unset;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.4em;
+
+}
