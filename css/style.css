@@ -10,6 +10,8 @@ body {
     padding: 0%;
     margin: 0%;
     max-width: 100vw;
+    
+    overflow-x: hidden;
     font-family: 'Expletus Sans', cursive;
 }
 
@@ -246,7 +248,7 @@ footer .links ul li {
         font-size: 35px;
     }
 
-    .featuers {
+    .featuers { 
         flex-basis: 100%;
     }
 
@@ -258,10 +260,10 @@ footer .links ul li {
 .catlogRow {
     padding: 5%;
     background-color: #fff5ee;
-    width: 95% fit-content;
+    width: 100%%;
+    grid-gutter-width: 0;
     font-family: 'Expletus Sans', cursive;
-    --bs-gutter-x: 0 !important;
-    --bs-gutter-y: unset !important;
+   
     margin-right: 0 !important;
 }
 
