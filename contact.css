@@ -1,9 +1,16 @@
-*{
+body{
     padding: 0%;
     margin: 0;
 }
 .heading{
-    background: url(https://img.freepik.com/free-vector/contact-us-concept-landing-page_52683-18637.jpg?w=2000);
+    background: url("images/contactBackground.png");
+    background-color: whitesmoke;
+    position: relative;
+    top: 45%;
     text-align: center;
-    background-size: cover;
+    width: 1250px;
+    height: 201px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: blueviolet;
 }
