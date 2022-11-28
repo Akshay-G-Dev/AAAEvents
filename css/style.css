@@ -244,7 +244,7 @@ footer .links ul li {
 }
 */
 @media screen and (max-width:770px) {
-    .title-text h1 {
+    .title-text h3 {
         font-size: 35px;
     }
 
