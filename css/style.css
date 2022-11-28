@@ -89,7 +89,7 @@ nav {
 }
 
 .text-box h3 {
-    font-size: 8em;
+    font-size: 6em;
     line-height: 160px;
     margin-left: -10px;
     font-family: 'Teko', sans-serif;
@@ -133,6 +133,7 @@ nav {
     align-items: center;
     text-decoration: none;
     cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .text-box a:hover {
