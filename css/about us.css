@@ -8,6 +8,9 @@ body{
 	background: #262626;
  }
  /*contact box*/
+ .box{
+    display: flex;
+ }
  .contact-box {
 	width: 80%;
 	margin: auto;
@@ -124,9 +127,6 @@ body{
  }
  .text-banner h1{
 	font-size: 130px;
- }
- .team-area{
-	padding-top: 5%;
  }
  .single-team{
 	background-color: #000;
