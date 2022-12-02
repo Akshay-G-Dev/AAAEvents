@@ -1,77 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@600&family=Expletus+Sans:ital,wght@0,600;1,600&family=Lobster+Two:ital@1&family=Macondo&family=Merienda:wght@800&family=Satisfy&display=swap');
 *{
      margin: 0;
      padding: 0;
      text-align: center;
 }
 body{
-    background: unset !important;
-    color: unset !important;
-}
-#about-us{
-    
-    background:linear-gradient(rgba(144, 228, 236, 0.185),#eb3c6291), url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-.text-banner{
-    text-align: center;
-    color: #fff;
-    padding-top: 280px;
-    font-family: 'Merienda', cursive;
-}
-.text-banner h1{
-    font-size: 130px;
-}
-#feature {
-    width: 100%;
-    padding: 70px 0;
-}
-
-.title-text h1 {
-    font-size: 50px;
-    padding: 3%;
-    text-align: center;
-    font-family: 'Expletus Sans', cursive;
-}
-
-.feature-box {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-}
-
-.featuers {
-    flex-basis: 50%;
-}
-
-.featuers h1 {
-    text-align: left;
-    margin-bottom: 10px;
-    font-weight: 100;
-    color: #0096;
-    font-family: 'Satisfy', cursive;
-}
-
-.features-img {
-    flex-basis: 50%;
-    margin: auto;
-}
-
-.features-img img {
-    width: 70%;
-    border-radius: 10px;
-}
-
-.feature-text{
-    padding: 0 20px;
-    text-align: initial;
-    font-family: 'Lobster Two', cursive;
-}
-/*what we do css*/
+	background: #262626;
+ }
+ /*contact box*/
+ .contact-box {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+ }
+ /*what we do css*/
  .what-we-do{
      gap: 10px 20px;
      background-image: linear-gradient(to right,#6f085a,#c51c53);
@@ -106,6 +50,7 @@ body{
     transition: transform .75s;
  }
  .car:hover .car-image{
+	cursor: pointer;
     transform: scale(1.15);
  }
  .car-title{
@@ -116,71 +61,159 @@ body{
     font-size: 30px;
     text-shadow: 0 0 1px rgba(0,0,0, .5);
 }
- .contact-box {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.row{
-    text-align: center;
-    padding: 2% 10%;
-    margin: 0;
-    font-family: 'Lobster Two', cursive;
-}
-
-.box{
-    color: gray;
-    transition: ease-in-out;
-
-}
-
-.box:hover {
-    top: -5%;
-    cursor: pointer;
-    color: black;
-    background-color: #FAF9F6;
-}
-/*social icon effect*/
-.social{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: stretch;
-    justify-content: space-evenly;
-}
-.SocialIcon{
-    padding: 2.6%;
-    height: 50px;
-    width: 50px;
-    border-radius: 100%;
-    background-color: #F9F6EE;
-}
-.SocialIcon:hover{
-    background-color: var(--color);
-    border-radius: 100%;
-    text-align: center;
-    padding: 5%;
-    transition: ease-in-out 0.9s;
-    height: 68px;
-    width: 70px;
-    cursor: pointer;
-}
-@media screen and (max-width:770px){
-    .title-text h1{
-        font-size: 35px;
-    }
-    .featuers{
-        flex-basis: 100%;
-    }
-    .features-img{
-        flex-basis: 100%;
-    }
-    .featuers h1{
-        text-align: center;
-    }
-    .featuers p{
-        text-align: center;
-    }
-}
+ /*features css*/
+ #feature {
+	width: 100%;
+	padding: 70px 0;
+	background-color: antiquewhite;
+ }
+ .title-text h1 {
+	font-size: 50px;
+	padding: 3%;
+	text-align: center;
+	font-family: 'Expletus Sans', cursive;
+ }
+ .feature-box {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+ }
+ .featuers {
+	flex-basis: 50%;
+ }
+ 
+ .featuers h1 {
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: #0096;
+	font-family: 'Satisfy', cursive;
+ }
+ 
+ .features-img {
+	flex-basis: 50%;
+	margin: auto;
+ }
+ 
+ .features-img img {
+	width: 70%;
+	border-radius: 10px;
+ }
+ 
+ .feature-text{
+	padding: 0 20px;
+	text-align: initial;
+	font-family: 'Lobster Two', cursive;
+ }  
+ /*about us banner*/
+ #about-us{
+    
+	background:linear-gradient(rgba(144, 228, 236, 0.185),#eb3c6291), url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+ }
+ .text-banner{
+	text-align: center;
+	color: #fff;
+	padding-top: 280px;
+	font-family: 'Merienda', cursive;
+ }
+ .text-banner h1{
+	font-size: 130px;
+ }
+ .team-area{
+	padding-top: 5%;
+ }
+ .single-team{
+	background-color: #000;
+	margin-bottom: 10px;
+ }
+ .single-team:hover .social{
+	cursor: pointer;
+	opacity: 1;
+	transform: rotateY(0deg) scale(1, 1);
+ }
+ .img-area{
+	overflow: hidden;
+	position: relative;
+ }
+ .img-area img{
+	width: 100%;
+ }
+ .img-area:hover img{
+	transform: scale(1.2)
+ }
+ .img-area img{
+	transition: all 0.4s ease 0s;
+ }
+ @media (max-width: 768px){
+	.title-text h1{
+		font-size: 35px;
+	 }
+	 .featuers{
+		flex-basis: 100%;
+	 }
+	 .features-img{
+		flex-basis: 100%;
+	 }
+	 .featuers h1{
+		text-align: center;
+	 }
+	 .featuers p{
+		text-align: center;
+	 }
+	.img-area img{
+	    display: inline-block;
+	}
+ }
+ .img-area .social{
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: .5s;
+	transform: rotateY(180deg) scale(0.5, 0.5);
+ }
+ .img-area .social ul{
+	text-align: center;
+	position: relative;
+	top: 175px;
+ }
+ .img-area .social ul li a{
+	border: 1px solid #fff;
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+ }
+ .img-area .social ul li a:hover{
+	background-color: #fff;
+	color: #000;
+	border: 1px solid transparent;
+ }
+ .img-text{
+	padding: 25px;
+	color: #fff;
+	text-align: center;
+ }
+ .img-text h4{
+	font-family: 'Dancing Script', cursive;
+	margin: 0 0 5px;
+	font-size: 30px;
+	letter-spacing: 5px;
+ }
+ .img-text h5{
+	font-size: 17px;
+	font-family: 'Courgette', cursive;
+ }
