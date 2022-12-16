@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(35deg,#560ea2,#c78dc7,#f496a6)/*(to left bottom,#34495e,#9b59b6,#3498db,,#1abc9c)*/;
+    background-image: linear-gradient(to right top, #e64ea4, #d95cbd, #c76ad2, #af78e5, #9185f3, #649dff, #30b1ff, #00c2ff, #00dcf5, #00f0c7, #88fc87, #f5fb4d);
      background-repeat: no-repeat;
      background-attachment: fixed;
      padding: 0%;
@@ -11,7 +11,7 @@ body{
  }
  .heading{
     position: relative;
-    background-image: url(images/backimage.jpg);
+    background-image: url(https://images.pexels.com/photos/1782146/pexels-photo-1782146.jpeg);
     background-size: cover;
     padding: 17%;
  }
@@ -55,47 +55,47 @@ body{
      transform: translate(0, -9px);
  }
  .img-one{
-     background-image: url(images/s1.jpeg);
+     background-image: url(https://images.pexels.com/photos/5638750/pexels-photo-5638750.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-two{
-     background-image: url(images/s2.jpeg);
+     background-image: url(https://images.pexels.com/photos/33162/food-restaurant-menu-asia.jpg);
      background-size: cover;
      background-position: center center;
  }
  .img-three{
-     background-image: url(images/s3.jpeg);
+     background-image: url(https://images.pexels.com/photos/1839919/pexels-photo-1839919.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-four{
-     background-image: url(images/p1.jpeg);
+     background-image: url(https://images.pexels.com/photos/7159865/pexels-photo-7159865.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-five{
-     background-image: url(images/p2.jpeg);
+     background-image: url(https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-six{
-     background-image: url(images/p3.jpeg);
+     background-image: url(https://images.pexels.com/photos/3184188/pexels-photo-3184188.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-seven{
-     background-image: url(images/f1.jpeg);
+     background-image: url(https://images.pexels.com/photos/175568/pexels-photo-175568.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-eight{
-     background-image: url(images/f2.jpeg);
+     background-image: url(https://images.pexels.com/photos/3153198/pexels-photo-3153198.jpeg);
      background-size: cover;
      background-position: center center;
  }
  .img-nine{
-     background-image: url(images/f3.jpeg);
+     background-image: url(https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg);
      background-size: cover;
      background-position: center center;
  }
@@ -118,7 +118,7 @@ body{
      color: #fff;
  }
  .img-text h4{   
-    background: -webkit-linear-gradient(#580c4a, #f04579 , #6a47c7 );
+    background-image: linear-gradient(to bottom, #2a0227, #370333, #440440, #52044d, #60035a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
      line-height: 15px;
