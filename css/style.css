@@ -75,6 +75,7 @@ nav {
 
 .cart {
     width: 30px;
+    height: 30px;
     cursor: pointer;
     margin-right: 1em;
 }
