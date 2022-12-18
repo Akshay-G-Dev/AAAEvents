@@ -114,7 +114,7 @@ body{
  /*about us banner*/
  #about-us{
     
-	background:linear-gradient(rgba(144, 228, 236, 0.185),#eb3c6291), url(https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg);
+	background:linear-gradient(rgba(144, 228, 236, 0.185),#eb3c6291), url(/images/aboutus-main.jpeg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;

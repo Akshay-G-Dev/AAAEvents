@@ -18,7 +18,7 @@ body {
 .header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, .3), transparent), url(https://images.pexels.com/photos/167491/pexels-photo-167491.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), transparent), url(/images/main-home.jpeg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
