@@ -1,33 +1,30 @@
 <?php
-require_once('database.php'); 
+   include("database.php");
+   include("session.php");
+   session_start();
    
-$firstName =legal_input($first_name);
-$lastName  =legal_input($last_name);
-$email     =legal_input($email);
-$password  =legal_input(md5($password));
-
-$value = trim($value);
-$value = stripslashes($value);
-$value = htmlspecialchars($value);
-return $value;
-}
-
-
-function register($firstName,$lastName,$email,$password){
-    global $db;
-    $sql="INSERT INTO users(first_name,last_name,email,password) VALUES(?,?,?,?)";
-    $query=$db->prepare($sql);
-    $query->bind_param('ssss',$firstName,$lastName,$email,$password);
-    $exec= $query->execute();
-     if($exec==true)
-     {
-      return "You are registered successfully";
-     }
-     else
-     {
-       return "Error: " . $sql . "<br>" .$db->error;
-     }
-}
-
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myusername = mysqli_real_escape_string($db,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      
+      $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      $active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if($count == 1) {
+         session_register("myusername");
+         $_SESSION['login_user'] = $myusername;
+         
+         //header("location: welcome.php");
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
+   }
 ?>
-
