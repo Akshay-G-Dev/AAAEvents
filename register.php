@@ -12,7 +12,7 @@ function register($username,$password){
     global $db;
     $sql="INSERT INTO users(username,password) VALUES(?,?)";
     $query=$db->prepare($sql);
-    $query->bind_param('ssss',$username,$password);
+    $query->bind_param('ss',$username,$password);
     $exec= $query->execute();
      if($exec==true)
      {
