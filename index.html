@@ -190,8 +190,11 @@
       </footer>
 
     <section class="popup">
-        <div class="popup-box">
-            <div class="login-container">
+        <div class=" popup-box" id="register-popup-box" style="display: none !important;">
+            <div class="register-container">
+                <form method="POST" action="register.php">
+
+                
                 <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
@@ -211,13 +214,40 @@
                     <hr>
                 </table>
                 <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                <button type="submit" class="registerbtn">Register</button>
+                <input type="submit" class="registerbtn">Register</input>
+                </form>
             </div>
             <div class="container signin">
-                <p>Already have an account? <a href="#">Sign in</a>.</p>
+                <p>Already have an account? <a href="#" id="login-page-btn">Sign in</a>.</p>
             </div>
         </div>
+        <div class="popup-box" id="login-popup-box" style="display: none;">
+            <div class="login-container">
+                <form method="POST" action="login.php">
+
+                
+                <h1>Login</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
+                <p>Welcome Back</p>
+                <hr>
+                <table>
+                    <tr>
+                        <td><label for="email"><b>Email</b></label></td>
+                        <td><input type="text" placeholder="Enter Email" name="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="psw"><b>Password</b></label></td>
+                        <td><input type="password" placeholder="Enter Password" name="psw" id="psw" required></td>
+                    </tr>
+                    
+                    <hr>
+                </table>
+                <input type="submit" class="registerbtn">Login</input>
+                </form>
+            </div>
+           
+        </div>
     </section>
+    
     <style>
     .close-popup {
         position: absolute;
@@ -257,11 +287,14 @@
         position: relative;
         /*left:40%;
             top: 40%; */
+        
         margin-top: 6em;
         background-color: rgb(255, 255, 255);
         height: fit-content;
         width: 30em;
+        display: none;
     }
+   
     </style>
 </body>
 <script>

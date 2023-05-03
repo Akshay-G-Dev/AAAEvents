@@ -1,5 +1,5 @@
 <?php 
-$db= $conn;
+
 $hostname     = "localhost"; // enter your hostname
 $username     = "root";  // enter your table username
 $password     = "";   // enter your password
@@ -10,4 +10,5 @@ $conn = new mysqli($hostname, $username, $password,$databasename);
 if ($conn->connect_error) { 
 die("Unable to Connect database: " . $conn->connect_error);
  }
+ $db=$conn;
 ?>

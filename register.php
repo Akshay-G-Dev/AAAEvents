@@ -1,9 +1,6 @@
 <?php
 require_once('database.php'); 
    
-$username =$_POST['username'];
-$email     =$_POST['email'];
-$password  =$_POST['username'];
 
 
 
@@ -23,6 +20,12 @@ function register($username,$password){
        return "Error: " . $sql . "<br>" .$db->error;
      }
 }
-register($username,$password);
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+  $username =$_POST['email'];
+  $email     =$_POST['email'];
+  $password  =$_POST['psw'];
+
+  register($username,$password);
+}
 ?>
 

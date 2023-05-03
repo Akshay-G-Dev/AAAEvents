@@ -27,4 +27,7 @@
          $error = "Your Login Name or Password is invalid";
       }
    }
+   else{
+      $error = "GET not allowed";
+   }
 ?>
