@@ -1,3 +1,6 @@
+<?php
+    include("session.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,11 +36,19 @@
                 </li>
                 
                 <li>
-                    <a class="btn btn-primary m-1" id="login-signup">Register</a>
-                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="images/man.png" alt="icon" class="cart ">
-                        
-                    </a> -->
+                    <?php
+                    if ($_SESSION['login_user']){
+                    
+                        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a> ';
+                        echo '<img src="images/man.png" alt="icon" class="cart ">';
+
+                    }
+                    else{
+                    echo '<a class="btn btn-primary m-1" id="login-signup">Register</a>';
+                    }
+                   
+                    ?>
+                    
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="profile.html">Manage Profile</a>
                         <a class="dropdown-item" href="feedback.html">Feedback</a>

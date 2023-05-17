@@ -13,7 +13,7 @@ function register($username,$password){
     $exec= $query->execute();
      if($exec==true)
      {
-      return "You are registered successfully";
+      return 1;
      }
      else
      {
@@ -21,11 +21,18 @@ function register($username,$password){
      }
 }
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-  $username =$_POST['email'];
-  $email     =$_POST['email'];
-  $password  =$_POST['psw'];
+  $username = $_POST['email'];
+  $email    = $_POST['email'];
+  $password = $_POST['psw'];
 
-  register($username,$password);
+  $res = register($username,$password);
+  if ($res==1) {
+    $_SESSION['login_user'] = $myusername;
+    header("Location: index.php");
+    die();
+  }
+  header("Location: login.php");
+  die();
 }
 ?>
 
