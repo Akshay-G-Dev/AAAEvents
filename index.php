@@ -207,7 +207,14 @@
             <div class="register-container">
                 <form method="POST" action="register.php">
 
-                <span class="message-line"><?php echo $_SESSION['message']; ?></span>
+                <span class="message-line"><?php
+                    if(isset($_SESSION['message'])){
+                        echo $_SESSION['message'];?>    
+                </span>
+                <script>
+                    open_popup("register");
+                </script>
+                <?php } ?>
                 <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
@@ -227,7 +234,7 @@
                     <hr>
                 </table>
                 <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                <input type="submit" class="registerbtn">Register</input>
+                <input type="submit" class="registerbtn" value="Register"></input>
                 </form>
             </div>
             <div class="container signin">
