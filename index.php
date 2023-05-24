@@ -12,7 +12,6 @@
     <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="images/icon.ico">
-    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fontawesome.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -37,14 +36,17 @@
                 
                 <li>
                     <?php
-                    if ($_SESSION['login_user']){
+                    echo $_SESSION['message'];
+                    echo $_SESSION['query'];
+                    if (isset($_SESSION['login_user'])){
                     
-                        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a> ';
-                        echo '<img src="images/man.png" alt="icon" class="cart ">';
+                        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
+                        echo '<img src="images/man.png" alt="icon" class="cart "></a>';
 
                     }
                     else{
                     echo '<a class="btn btn-primary m-1" id="login-signup">Register</a>';
+                    
                     }
                    
                     ?>
@@ -201,11 +203,11 @@
       </footer>
 
     <section class="popup">
-        <div class=" popup-box" id="register-popup-box" style="display: none !important;">
+        <div class=" popup-box" id="register-popup-box">
             <div class="register-container">
                 <form method="POST" action="register.php">
 
-                
+                <span class="message-line"><?php echo $_SESSION['message']; ?></span>
                 <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
@@ -232,7 +234,7 @@
                 <p>Already have an account? <a href="#" id="login-page-btn">Sign in</a>.</p>
             </div>
         </div>
-        <div class="popup-box" id="login-popup-box" style="display: none;">
+        <div class="popup-box" id="login-popup-box" >
             <div class="login-container">
                 <form method="POST" action="login.php">
 
@@ -252,8 +254,11 @@
                     
                     <hr>
                 </table>
-                <input type="submit" class="registerbtn">Login</input>
+                <input type="submit" class="registerbtn" value="Login"></input>
                 </form>
+            </div>
+            <div class="container signin">
+                <p>New User? <a href="#" id="signup-page-btn">Register</a>.</p>
             </div>
            
         </div>

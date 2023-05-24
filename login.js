@@ -18,6 +18,7 @@ function close_popup() {
     $("#login-popup-box").css({'display':'none'});
     $("#register-popup-box").css({'display':'none'});
 }
-$("#login-signup").on('click', open_popup("register"));
-$(".close-popup").on('click', close_popup);
-$("#login-page-btn").on("click",open_popup('login'));
+$("#login-signup").on('click', function(e){open_popup("register")});
+$(".close-popup").on('click', function(e){close_popup()});
+$("#login-page-btn").on("click",function(e){open_popup('login')});
+$("#signup-page-btn").on("click",function(e){open_popup('register')});
