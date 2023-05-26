@@ -37,10 +37,10 @@
                 <li>
                     <?php
                     echo $_SESSION['message'];
-                    echo $_SESSION['query'];
+                    
                     if (isset($_SESSION['login_user'])){
                     
-                        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
+                        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
                         echo '<img src="images/man.png" alt="icon" class="cart "></a>';
 
                     }
@@ -51,8 +51,8 @@
                    
                     ?>
                     
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Manage Profile</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="right:0;">
+                        <a class="dropdown-item" href="profile.php">Manage Profile</a>
                         <a class="dropdown-item" href="feedback.html">Feedback</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Help</a>

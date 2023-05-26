@@ -1,3 +1,16 @@
+<?php
+session_start();
+echo $_SESSION['message'];
+
+if (isset($_SESSION['login_user'])){
+
+    $user_check = $_SESSION['login_user'];
+} else
+{ 
+  echo '<script>
+      window.location.href = "index.php";
+   </script>';
+}?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -136,7 +149,10 @@
                     <table>
                         <tr>
                             <td><label for="name">Name : </label></td>
-                            <td><input type="text" id="name" placeholder="Name" /></td>
+                            <?php
+                            echo '<td><input type="text" id="name" placeholder="Name" value="' . $_SESSION["name"] . '>';
+                            ?>
+                          /></td>
                         </tr>
                         <tr>
                             <td><label for="mobno">Contact No : </label></td>
