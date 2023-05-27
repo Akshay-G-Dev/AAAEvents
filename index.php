@@ -1,5 +1,7 @@
 <?php
     include("session.php");
+    //$obj = unserialize($_SESSION['user_obj']);
+    echo '$obj';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,6 +58,8 @@
                         <a class="dropdown-item" href="feedback.html">Feedback</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="logout.php">Logout</a>
+                        
                     </div>
                 </li>
             </ul>

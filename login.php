@@ -1,7 +1,8 @@
 <?php
    include("database.php");
    session_start();
-   print "something";
+
+   
    $error = null;
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
@@ -9,7 +10,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['email']);
       $mypassword = mysqli_real_escape_string($db,$_POST['psw']); 
       
-      $sql = "SELECT id FROM users WHERE username = '$myusername' and password = '$mypassword'";
+      $sql = "SELECT id,name,mobile FROM users WHERE email = '$myusername' and password = '$mypassword' LIMIT 1";
       
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -21,7 +22,14 @@
 	
       if($count == 1) {
          //session_register("myusername");
-         $_SESSION['login_user'] = $myusername;
+         $_SESSION['login_user'] = $row['id'];
+         $user = new User();
+         $user->email = $myusername;
+         $user->name = $row['name'];
+   
+         $_SESSION['user_obj'] = serialize($obj);
+
+         $obj = unserialize($_SESSION['user_obj']);
          
          header("Location: index.php");
       }else {

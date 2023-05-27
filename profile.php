@@ -7,9 +7,7 @@ if (isset($_SESSION['login_user'])){
     $user_check = $_SESSION['login_user'];
 } else
 { 
-  echo '<script>
-      window.location.href = "index.php";
-   </script>';
+  header('Location: index.php');
 }?>
 <!DOCTYPE html>
 <html lang="en">
@@ -162,7 +160,10 @@ if (isset($_SESSION['login_user'])){
                         </tr>
                         <tr>
                             <td><label for="Email">Email : </label></td>
-                            <td><input type="text" id="Email" placeholder="Email" /></td>
+                            <td>
+                              <?php
+                              echo '<input type="text" id="Email" placeholder="Email" value="' . $_SESSION['email'] . '/></td>';
+                              ?>
                         </tr>
                     </table>
                 </div>
