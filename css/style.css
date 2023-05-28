@@ -5,7 +5,9 @@
     text-align: center;
     box-sizing: border-box;
 }
-
+.alert{
+    z-index: 5;
+}
 body {
     padding: 0%;
     margin: 0%;
@@ -395,7 +397,8 @@ footer .links ul li {
 
 /* Full-width input fields */
 input[type=text],
-input[type=password] {
+input[type=password],
+input[type=email] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;

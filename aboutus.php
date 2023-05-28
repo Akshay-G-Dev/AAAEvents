@@ -1,19 +1,22 @@
+<?php include("session.php");?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    
     <title>About Us</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/jquery.js"></script> -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="icon" href="images/icon.ico">
+    
     <link rel="stylesheet" href="css/about us.css" />
     <link rel="stylesheet" href="css/footer.css" />
-
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <?php include("head.php");?>
   </head>
   <body>  
+    <?php include("nav.php");?>
     <section id="about-us">
       <div class="text-banner">
         <h1>About Us</h1>
@@ -239,26 +242,6 @@
         </div>
       </div>
     </section>
-    <footer>
-      <span class="company-name">Eventia</span>
-      <ul>
-        <li style="--clr: #00ade1">
-          <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
-        </li>
-        <li style="--: #dc00d4">
-          <a href="aboutus.html" data-text="&nbsp;AboutUs"
-            >&nbsp;AboutUs&nbsp;</a
-          >
-        </li>
-        <li style="--clr: #ff6493">
-          <a href="contact us.html" data-text="&nbsp;ContactUs"
-            >&nbsp;ContactUs&nbsp;</a
-          >
-        </li>
-        <!-- <li style="--clr:#ffdd1c">
-              <a href="#" data-text="&nbsp;Feedback">&nbsp;Feedback&nbsp;</a>
-            </li> -->
-      </ul>
-    </footer>
+    <?php include("footer.php");?>
   </body>
 </html>

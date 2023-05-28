@@ -8,12 +8,13 @@ session_start();
 function register($username,$password){
   try {
     global $db;
-    $sql="INSERT INTO users(username,password) VALUES(?,?)";
+    $sql="INSERT INTO users(email,password) VALUES(?,?)";
     $query=$db->prepare($sql);
     $query->bind_param('ss',$username,$password);
     $exec= $query->execute();
       if($exec==true)
       {
+        $_SESSION['success_message']="Registration Successful. Please Login to continue";
       return 1;
       }
       else

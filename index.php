@@ -1,77 +1,36 @@
 <?php
     include("session.php");
-    //$obj = unserialize($_SESSION['user_obj']);
-    echo '$obj';
+    if(isset($_SESSION['user_obj']) && $_SESSION['user_obj']){
+        $user = unserialize($_SESSION['user_obj']);
+        
+    }
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include("head.php");?>
+   
+    
+  
+    <script src="login.js"></script>
     <title>Eventia</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="icon" href="images/icon.ico">
-    <link rel="stylesheet" href="css/fontawesome.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/footer.css">
+    
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="height: 80px;">
-        <a class="navbar-brand" href="#"><span class="company-name">Eventia</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" style="float: right; right: 0; position: absolute;">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact us.html">Contact Us</a>
-                </li>
-                
-                <li>
-                    <?php
-                    echo $_SESSION['message'];
-                    
-                    if (isset($_SESSION['login_user'])){
-                    
-                        echo '<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> ';
-                        echo '<img src="images/man.png" alt="icon" class="cart "></a>';
+    <?php
+        include("nav.php");
+    ?>
 
-                    }
-                    else{
-                    echo '<a class="btn btn-primary m-1" id="login-signup">Register</a>';
-                    
-                    }
-                   
-                    ?>
-                    
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="right:0;">
-                        <a class="dropdown-item" href="profile.php">Manage Profile</a>
-                        <a class="dropdown-item" href="feedback.html">Feedback</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Help</a>
-                        <a class="dropdown-item" href="logout.php">Logout</a>
-                        
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <div class="header">
         <!-- Ayush ka header hai yha pe--->
         <div class="text-box">
             <h3>HOW CAN WE HELP YOU?</h3>
             <div class="row">
-                <a href="gallery.html">Gallery</a>
-                <a href="catlog.html">Organise a Event <!--<span>&#x27F6;</span>--></a>
+                <a href="gallery.php">Gallery</a>
+                <a href="catlog.php">Organise a Event <!--<span>&#x27F6;</span>--></a>
             </div>
         </div>
         <div class="social-icons">
@@ -183,53 +142,30 @@
         </div>
         <span class="copyright">Copyright &copy; 2022</span>
     </footer>-->
-    <footer>
-       
-          <span class="company-name">Eventia</span>
-          <ul>
-            <li style="--clr:#00ade1">
-              <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
-            </li>
-            <li style="--clr:#dc00d4">
-              <a href="aboutus.html" data-text="&nbsp;AboutUs">&nbsp;AboutUs&nbsp;</a>
-            </li>
-            <li style="--clr:#ff6493">
-              <a href="contact us.html" data-text="&nbsp;ContactUs">&nbsp;ContactUs&nbsp;</a>
-            </li>
-            <!-- <li style="--clr:#ffdd1c">
-              <a href="#" data-text="&nbsp;Feedback">&nbsp;Feedback&nbsp;</a>
-            </li> -->
-            
-            
-            
-          </ul>
-     
-      </footer>
+    <?php include("footer.php");?>
 
     <section class="popup">
-        <div class=" popup-box" id="register-popup-box">
+        <div class=" popup-box" id="register-popup-box" onsubmit="return confirmpassword()">
             <div class="register-container">
-                <form method="POST" action="register.php">
+                <form method="POST" action="register.php" id="register-form">
 
                 <span class="message-line"><?php
-                    if(isset($_SESSION['message'])){
-                        echo $_SESSION['message'];?>    
+                if(isset($_SESSION['message']) && $_SESSION['message']){
+                    echo $_SESSION['message'];
+                }
+                ?>
                 </span>
-                <script>
-                    open_popup("register");
-                </script>
-                <?php } ?>
                 <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <table>
                     <tr>
                         <td><label for="email"><b>Email</b></label></td>
-                        <td><input type="text" placeholder="Enter Email" name="email" id="email" required></td>
+                        <td><input type="email" placeholder="Enter Email" name="email" id="email" required></td>
                     </tr>
                     <tr>
                         <td><label for="psw"><b>Password</b></label></td>
-                        <td><input type="password" placeholder="Enter Password" name="psw" id="psw" required></td>
+                        <td><input type="password" placeholder="Enter Password" name="psw" id="reg-psw" required></td>
                     </tr>
                     <tr>
                         <td><label for="psw-repeat"><b>Repeat Password</b></label></td>
@@ -295,6 +231,8 @@
         top: 0;
         left: 0;
         width: 100vw;
+        max-height: 100vw;
+        background-size: contain;
         height: 100vh;
         display: none;
 
@@ -323,7 +261,11 @@
     }
    
     </style>
+    <?php
+        include("alerts.php");
+?>
 </body>
+
 <script>
 
 function whichTransitionEvent(){
@@ -356,5 +298,11 @@ $(".catlogCol").hover(function () {
 </script>
 
 
-<script src="login.js"></script>
 </html>
+
+<?php
+    unset($_SESSION['message']);
+    unset($_SESSION['error_message']);
+    unset($_SESSION['error_message_type']);
+    unset($_SESSION['success_message']);
+?>

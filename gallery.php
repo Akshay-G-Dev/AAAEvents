@@ -2,8 +2,7 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <?php include("head.php");?>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -56,73 +55,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="height: 80px; z-index: 50000000;">
-      <a class="navbar-brand" href="#"
-        ><span class="company-name">Eventia</span></a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul
-          class="navbar-nav mr-auto"
-          style="float: right; right: 0; position: absolute"
-        >
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact us.html">Contact Us</a>
-          </li>
-          <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Dropdown
-                       </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>-->
-          <!--<form class="form-inline my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                   </form>-->
-          <li>
-            <!--<a class="btn btn-primary m-1" id="login-signup">Register</a>-->
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <img src="images/man.png" alt="icon" class="cart" />
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="profile.html">Manage Profile</a>
-              <a class="dropdown-item" href="feedback.html">Feedback</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Help</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <?php include('nav.php'); ?>
     <div
       id="carouselExampleSlidesOnly"
       class="carousel slide w-90"
@@ -130,16 +63,15 @@
       data-bs-ride="carousel"
     >
       <div class="galleryText">
-        <h1 style="z-index: 1;">Gallery</h1>
+        <h1 style="z-index: 1">Gallery</h1>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
             src="images/gallery-main.jpeg"
-        
             height="100%"
             class="d-block w-100"
-          /> 
+          />
           <!-- https://images.pexels.com/photos/10580245/pexels-photo-10580245.jpeg -->
         </div>
         <div class="carousel-item">
@@ -225,74 +157,43 @@
         <div class="col col-lg-9 col-md-12">
           <section class="gallery">
             <div class="image">
-              <img
-                loading="lazy"
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img loading="lazy" src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
             <div class="image">
-              <img
-                src="images/gallery-birthday.jpeg"
-                alt=""
-              />
+              <img src="images/gallery-birthday.jpeg" alt="" />
               <span>Bithday Event</span>
             </div>
           </section>
