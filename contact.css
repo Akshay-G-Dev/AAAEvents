@@ -104,3 +104,20 @@ textarea::-webkit-scrollbar-thumb{
 .container form #button:hover{
     opacity: 0.7;
 }
+
+input{
+    color: #fff;
+}
+input:focus{
+    color: #fff;
+    background: transparent !important;
+}
+input::placeholder{
+    color: #fff;
+}
+textarea{
+    color: #fff;
+}
+input:active{
+    background: transparent;
+}

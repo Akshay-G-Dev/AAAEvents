@@ -52,6 +52,12 @@ elseif(isset($_SESSION['success_message']) && $_SESSION['success_message']){
       '.$_SESSION['success_message'].'
     </div>';
 }
+elseif (isset($_SESSION['message']) && $_SESSION['message']) {
+  echo '<div class="alert info">
+      <span class="alertclosebtn">&times;</span>  
+      '.$_SESSION['message'].'
+    </div>';
+}
 ?>
 
 <script>

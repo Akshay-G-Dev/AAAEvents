@@ -3,18 +3,19 @@
       public $email;
       public $name;
       public $mobile_number;
+      public $type;
    }
    include('database.php');
    session_start();
   
   
-   $_SESSION['message']=NULL;
+   
    $_SESSION['query']=NULL;
 
    if(isset($_SESSION['login_user'])){
       $user_check = $_SESSION['login_user'];
       if($user_check!=NULL){
-         $ses_sql = mysqli_query($db,"select id,email,mobile,name from users where id = '$user_check' ")  or die( mysqli_error($db));
+         $ses_sql = mysqli_query($db,"select id,email,mobile,name,category from users where id = '$user_check' ")  or die( mysqli_error($db));
          
          $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
          
@@ -23,6 +24,7 @@
          $user->email = $row['email'];
          $user->name = $row['name'];
          $user->mobile_number = $row['mobile'];
+         $user->type = $row['category'];
    
          $_SESSION['user_obj'] = serialize($user);
 

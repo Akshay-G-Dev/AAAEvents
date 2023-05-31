@@ -27,19 +27,19 @@
             <span class="single-img img-one">
                 <span class="img-text">
                     <h4>Fun & Party</h4>
-                    <button><a href="#">Book Now</a></button>
+                    <button><a href="form.php">Book Now</a></button>
                 </span>
             </span>
             <span class="single-img img-two">
                <span class="img-text">
                    <h4>Tasty treats</h4>
-                   <button><a href="#">Book Now</a></button>
+                   <button><a href="form.php">Book Now</a></button>
                </span>
            </span>
            <span class="single-img img-three">
                <span class="img-text">
                    <h4>Exhibition</h4>
-                   <button><a href="#">Book Now</a></button>
+                   <button><a href="form.php">Book Now</a></button>
                </span>
            </span>
     </div>
@@ -52,19 +52,19 @@
          <span class="single-img img-four">
              <span class="img-text">
                  <h4>Birthday</h4>
-                 <button><a href="#">Book Now</a></button>
+                 <button><a href="form.php">Book Now</a></button>
              </span>
          </span>
          <span class="single-img img-five">
             <span class="img-text">
                 <h4>Weddings & Anniversary</h4>
-                <button><a href="#">Book Now</a></button>
+                <button><a href="form.php">Book Now</a></button>
             </span>
         </span>
         <span class="single-img img-six">
             <span class="img-text">
                 <h4>Family Events</h4>
-                <button><a href="#">Book Now</a></button>
+                <button><a href="form.php">Book Now</a></button>
             </span>
         </span>
     </div>
@@ -77,19 +77,19 @@
          <span class="single-img img-seven">
              <span class="img-text">
                  <h4>Auction</h4>
-                 <button><a href="#">Book Now</a></button>
+                 <button><a href="form.php">Book Now</a></button>
              </span>
          </span>
          <span class="single-img img-eight">
             <span class="img-text">
                 <h4>Workshop & Master class</h4>
-                <button><a href="#">Book Now</a></button>
+                <button><a href="form.php">Book Now</a></button>
             </span>
         </span>
         <span class="single-img img-nine">
             <span class="img-text">
                 <h4>Confrence</h4>
-                <button><a href="#">Book Now</a></button>
+                <button><a href="form.php">Book Now</a></button>
             </span>
         </span>
     </div>

@@ -19,10 +19,11 @@
     
 </head>
 
-<body>
+<body><?php include("alerts.php");?>
     <?php
         include("nav.php");
     ?>
+    
 
     <div class="header">
         <!-- Ayush ka header hai yha pe--->
@@ -56,7 +57,7 @@
                 <img src="images/event-type-3.jpeg" alt="Social Event" width="300" height="300" style="border-radius: 100%; padding: 2%;">
                 <h4>Personal Event</h4>
             </div>
-            <button type="button" class="btn btn-sm btn-outline-dark" style="height: 3em;">Book Now</button>
+           <a href="form.php" type="button" class="btn btn-sm btn-outline-dark" style="height: 3em;">Book Now</a>
         </div>
     </section>
     <!--testmonial-->
@@ -155,7 +156,7 @@
                 }
                 ?>
                 </span>
-                <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
+                <h1>Register</h1> <span class="close-popup"><i class="fa-solid fa-xmark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></i></span>
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <table>
@@ -186,7 +187,7 @@
                 <form method="POST" action="login.php">
 
                 
-                <h1>Login</h1> <span class="close-popup"><i class="fa-solid fa-xmark"></i></span>
+                <h1>Login</h1> <span class="close-popup"><i class="fa-solid fa-xmark"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></i></span>
                 <p>Welcome Back</p>
                 <hr>
                 <table>

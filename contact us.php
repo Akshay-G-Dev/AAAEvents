@@ -1,4 +1,24 @@
 <?php include("session.php");?>
+
+<?php 
+if($_SERVER['REQUEST_METHOD']== 'POST'){
+    $fname=$_POST['fname'];
+    $lname=$_POST['lname'];
+    $email=$_POST['email'];
+    $mobile=$_POST['mobile'];
+    $message=$_POST['message'];
+    $query="INSERT INTO contactus (firstname,lastname,email,mobile,message) VALUES ('$fname','$lname','$email','$mobile','$message')";
+    $result=$conn->query($query);
+    if($result){
+        $_SESSION['success_message']="Message Sent Successfully";
+        header("location:contact.php");
+    }
+    else{
+        $_SESSION['error_message']="Message Sending Failed";
+        header("location:contact.php");
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +32,12 @@
 <body>
     <?php include("nav.php");?>
     <div class="container" style="margin:0 !important; min-width:100vw;">
-        <form>
+        <form action="" method="POST">
             <h1>Leave a Message</h1>
-            <input type="text" id="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="mobile" placeholder="Mobile" required>
+            <input type="text" id="firstName" name="fname" placeholder="First Name" required>
+            <input type="text" id="lastName" name="lname" placeholder="Last Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
             <h4>Type Your Message Here...</h4>
             <textarea required></textarea>
             <input type="submit" value="Send" id="button">
