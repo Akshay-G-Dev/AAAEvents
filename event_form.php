@@ -11,9 +11,13 @@ if($_SERVER['REQUEST_METHOD']==="POST"){
     $date=$_POST['date'];
     $city=$_POST['city'];
     $members=$_POST['members'];
-    $user_id=$user->id;
-    $query="INSERT INTO events (name,type,date,city,members,user_id) VALUES ('$name','$type','$date','$city','$members','$user_id')";
+    $user_id=$_SESSION['login_user'];
+    $query="INSERT INTO events (name,type,date,city,members,userid) VALUES ('$name','$type','$date','$city','$members','$user_id')";
     $result=$conn->query($query);
+    if (!$result) {
+          trigger_error(mysqli_error($db), E_USER_ERROR);
+      }
+
     if($result){
         $_SESSION['success_message']="Event Registered Successfully";
         header("location:index.php");
