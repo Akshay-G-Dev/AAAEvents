@@ -16,10 +16,10 @@ if($_SERVER['REQUEST_METHOD']==="POST"){
     $result=$conn->query($query);
     if($result){
         $_SESSION['success_message']="Event Registered Successfully";
-        header("location:events.php");
+        header("location:index.php");
     }
     else{
         $_SESSION['error_message']="Event Registration Failed";
-        header("location:event_form.php");
+        header("location:index.php");
     }
 }
