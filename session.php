@@ -39,9 +39,13 @@
       }
    }
    else {
+      $_SESSION['login_user']=NULL;
+      $_SESSION['user_obj']=NULL;
+      $user=NULL;
       if (!(session_status() == PHP_SESSION_ACTIVE)) {
          $_SESSION['login_user']=NULL;
          $_SESSION['user_obj']=NULL;
+         $user=NULL;
          $_SERVER['REQUEST_URI'];
          $curPageName = substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);  
          echo "The current page name is: ".$curPageName;  

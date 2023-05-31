@@ -1,69 +1,24 @@
+<?php include("session.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include("head.php");?>
+    
     <title>Catlog</title>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Courgette&family=Expletus+Sans:ital,wght@1,500&family=Great+Vibes&family=Kaushan+Script&family=Marck+Script&family=Marhey&family=Merienda:wght@700&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/evee.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/footer.css">
     <link rel="icon" href="images/icon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/jquery.js"></script>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="icon" href="images/icon.ico">
-    <link rel="stylesheet" href="css/fontawesome.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
     
+    <link rel="stylesheet" href="css/fontawesome.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <?php include("head.php");?>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="height: 80px;">
-        <a class="navbar-brand" href="#"><span class="company-name">Eventia</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto" style="float: right; right: 0; position: absolute;">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact us.html">Contact Us</a>
-                </li>
-                <!--<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Dropdown
-                       </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
-                    </li>-->
-                <!--<form class="form-inline my-2 my-lg-0">
-                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                   </form>-->
-                <li>
-                    <a class="btn btn-primary m-1" id="login-signup">Register</a>
-                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="images/man.png" alt="icon" class="cart ">
-                        
-                    </a> -->
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="profile.html">Manage Profile</a>
-                        <a class="dropdown-item" href="feedback.html">Feedback</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Help</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <?php include("nav.php");?>
     <div class="heading"><p>Your Choice Matter</p></div>
           <div class="social">
             <p>Social Events</p>
@@ -140,24 +95,6 @@
     </div>
 </div>
 </div>
-<footer>
-       
-    <span class="company-name">Eventia</span>
-    <ul>
-      <li style="--clr:#00ade1">
-        <a href="index.html" data-text="&nbsp;Home">&nbsp;Home&nbsp;</a>
-      </li>
-      <li style="--clr:#dc00d4">
-        <a href="aboutus.html" data-text="&nbsp;AboutUs">&nbsp;AboutUs&nbsp;</a>
-      </li>
-      <li style="--clr:#ff6493">
-        <a href="contact us.html" data-text="&nbsp;ContactUs">&nbsp;ContactUs&nbsp;</a>
-      </li>
-      <!-- <li style="--clr:#ffdd1c">
-        <a href="#" data-text="&nbsp;Feedback">&nbsp;Feedback&nbsp;</a>
-      </li> -->    
-    </ul>
-
-</footer>
+<?php include("footer.php");?>
 </body>
 </html>

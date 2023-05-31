@@ -1,13 +1,18 @@
 
 body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #000070;
 }
-
 form{
-  position: absolute;
+  /* margin-top: 2em !important; */
+}
+form{
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); */
   background: rgba(0,0,0,.1);
   padding: 100px;
 }
@@ -29,7 +34,7 @@ form input,#type,select option{
   width: 350px;
   margin: 10px 0;
   /* background: transparent; */
-  background: #000070;
+  background: #000070 !important;
   color: #FFF;
 }
 select{

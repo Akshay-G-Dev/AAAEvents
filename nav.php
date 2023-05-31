@@ -27,7 +27,7 @@
 
                 }
                 else{
-                echo '<a class="btn btn-primary m-1" id="login-signup">Register</a>';
+                echo '<a class="btn btn-primary m-1" id="login-signup">Join Us</a>';
 
                 }
 

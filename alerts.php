@@ -66,3 +66,10 @@ for (i = 0; i < close.length; i++) {
   }
 }
 </script>
+
+<?php
+    unset($_SESSION['message']);
+    unset($_SESSION['error_message']);
+    unset($_SESSION['error_message_type']);
+    unset($_SESSION['success_message']);
+?>

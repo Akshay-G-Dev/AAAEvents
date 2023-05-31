@@ -1,16 +1,21 @@
+<?php
+include("session.php");
+?>
 <html>
 <head>
+  <?php include("head.php");?>
 <link rel="stylesheet" href="form.css">
+
 </head>
 <body>  
- <div class="container">
-            <form>
+  <?php include("nav.php");?>
+            <form method="post" action="event_form.php">
                 <label> Name: </label> <br>
-                <input type="text" placeholder="Enter Full Name" /> <br>
+                <input type="text" placeholder="Enter Full Name" value="<?php if($user){echo $user->name;}?>" /> <br>
                 <label> Your E-mail: </label> </br>
-                <input type="email" placeholder="" /> <br>
+                <input type="email" placeholder="Your Email" value='<?php if($user){echo $user->email;}?>' > <br>
                 <label> Mobile: </label> <br>
-                <input type="tel" placeholder="Enter phone number" /> <br>
+                <input type="tel" placeholder="Enter phone number" value='<?php if($user){echo $user->mobile_number;}?>' /> <br>
                 <label> Name of Event: </label> </br>
                 <input type="text" placeholder="eg. Birthday" /><br>
                 <label> Type of Event: </label> </br>

@@ -32,6 +32,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
   $email    = $_POST['email'];
   $password = $_POST['psw'];
 
+  $sql = "SELECT id FROM users WHERE email = '$username';";
+  $result = mysqli_query($db,$sql);
+  $row = mysqli_num_rows($result);
+  if($row!=0){
+    $_SESSION['error_message']="User already exists";
+    $_SESSION['error_message_type']='register';
+    header("Location: index.php");
+    die();
+  }
   $res = register($username,$password);
   if ($res==1) {
     $_SESSION['login_user'] = $myusername;

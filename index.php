@@ -30,7 +30,7 @@
             <h3>HOW CAN WE HELP YOU?</h3>
             <div class="row">
                 <a href="gallery.php">Gallery</a>
-                <a href="catlog.php">Organise a Event <!--<span>&#x27F6;</span>--></a>
+                <a href="catlog.php">See Catlog <!--<span>&#x27F6;</span>--></a>
             </div>
         </div>
         <div class="social-icons">
@@ -300,9 +300,4 @@ $(".catlogCol").hover(function () {
 
 </html>
 
-<?php
-    unset($_SESSION['message']);
-    unset($_SESSION['error_message']);
-    unset($_SESSION['error_message_type']);
-    unset($_SESSION['success_message']);
-?>
+
