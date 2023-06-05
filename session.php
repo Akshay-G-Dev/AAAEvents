@@ -10,7 +10,7 @@
   
   
    
-   $_SESSION['query']=NULL;
+
 
    if(isset($_SESSION['login_user'])){
       $user_check = $_SESSION['login_user'];
@@ -34,7 +34,8 @@
          // header("Location: index.php");
          //die();
       } else {
-         // $_SESSION['login_user']=NULL;
+         $_SESSION['login_user']=NULL;
+         $_SESSION['user_obj']=NULL;
          
          //header("Location: index.php");
          // die();

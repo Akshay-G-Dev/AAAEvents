@@ -7,15 +7,19 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
     $email=$_POST['email'];
     $mobile=$_POST['mobile'];
     $message=$_POST['message'];
-    $query="INSERT INTO contactus (firstname,lastname,email,mobile,message) VALUES ('$fname','$lname','$email','$mobile','$message')";
+    $query="INSERT INTO contactus (firstname,lastname,email,mobile,message) VALUES('$fname','$lname','$email','$mobile','$message')";
     $result=$conn->query($query);
+    
+      if (!$result) {
+          trigger_error(mysqli_error($db), E_USER_ERROR);
+      }
     if($result){
         $_SESSION['success_message']="Message Sent Successfully";
-        header("location:contact.php");
+        header("location:index.php");
     }
     else{
         $_SESSION['error_message']="Message Sending Failed";
-        header("location:contact.php");
+        header("location:index.php");
     }
 }
 ?>
@@ -39,7 +43,7 @@ if($_SERVER['REQUEST_METHOD']== 'POST'){
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="text" id="mobile" name="mobile" placeholder="Mobile" required>
             <h4>Type Your Message Here...</h4>
-            <textarea required></textarea>
+            <textarea required name="message"></textarea>
             <input type="submit" value="Send" id="button">
         </form>
     </div>
